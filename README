@@ -1,6 +1,26 @@
+Get source code from samsung open source:
+http://opensource.samsung.com/reception/receptionSub.do?method=sub&sub=F&searchValue=j700f
+
+[ro.build.version.incremental]: [J700FZTU4AQG1]
+
+Use this to find kernel : J700FZTU4AQG1
+
+can not find source code for this, so try this github
+
 [ro.product.model]: [SM-J700F]
 [ro.product.name]: [j7eltezt]
-[ro.revision]: [0]
+[ro.revision]: [0] ("Samsung J7ELTE revision 00 board based on EXYNOS7580")
+[ro.arch]: [exynos7580]
+[ro.chipname]: [exynos7580]
+[ro.hardware]: [samsungexynos7580]
+[ro.product.board]: [universal7580] (SAMSUNG Universal7580 board device tree source)
 
->>exynos7580-j7elte_rev00.dts
+Components by adb shell cat sys/bus/i2c/device/... : mms_ts cm36672p s2801x
 
+j7_defconfig :
+CONFIG_TOUCHSCREEN_MELFAS_MMS438=y
+
+==============================================================================
+Conclusion:
+
+DTS : exynos7580-j7elte_rev06.dts
